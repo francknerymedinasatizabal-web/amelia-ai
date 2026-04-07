@@ -1,0 +1,125 @@
+{
+  "no enfria": {
+    "causas": [
+      "Fuga de gas refrigerante",
+      "Filtro sucio o tapado",
+      "Condensador obstruido",
+      "Compresor en falla",
+      "Termostato descalibrado"
+    ],
+    "pasos": [
+      "Verificar presión con manifold (R410A: 120-130 PSI baja, 350-400 PSI alta)",
+      "Revisar y limpiar filtro de aire",
+      "Limpiar condensador con agua a presión",
+      "Medir amperaje del compresor"
+    ],
+    "herramientas": ["Manifold", "Pinzas amperimétricas", "Termómetro digital"]
+  },
+  "gotea agua": {
+    "causas": [
+      "Drenaje tapado o sucio",
+      "Bandeja de condensado llena",
+      "Evaporador congelado",
+      "Instalación sin pendiente"
+    ],
+    "pasos": [
+      "Revisar y limpiar tubo de drenaje con nitrógeno",
+      "Verificar pendiente de la unidad interior (3-5°)",
+      "Revisar si hay hielo en el evaporador",
+      "Limpiar bandeja de condensado"
+    ],
+    "herramientas": ["Nivel de burbuja", "Pistola de nitrógeno", "Aspiradora"]
+  },
+  "ruido extraño": {
+    "causas": [
+      "Tornillos o paneles sueltos",
+      "Rodamiento del motor dañado",
+      "Paletas del ventilador rotas o sucias",
+      "Compresor con golpeteo"
+    ],
+    "pasos": [
+      "Apagar y revisar tornillos de la carcasa",
+      "Girar ventilador manualmente y escuchar rodamiento",
+      "Inspeccionar paletas del fan",
+      "Medir vibración del compresor"
+    ],
+    "herramientas": ["Destornilladores", "Aceite lubricante"]
+  },
+  "no enciende": {
+    "causas": [
+      "Fusible quemado",
+      "Capacitor de arranque dañado",
+      "Tarjeta electrónica en falla",
+      "Protector térmico abierto",
+      "Sin tensión en el equipo"
+    ],
+    "pasos": [
+      "Verificar voltaje en bornes (220V o 110V según equipo)",
+      "Revisar fusibles del tablero",
+      "Medir capacitor con multímetro (modo capacitancia)",
+      "Revisar código de error en display"
+    ],
+    "herramientas": ["Multímetro", "Medidor de capacitancia", "Pinzas amperimétricas"]
+  },
+  "se congela": {
+    "causas": [
+      "Gas refrigerante bajo",
+      "Filtro de aire sucio (bajo caudal)",
+      "Temperatura ambiente muy baja",
+      "Ventilador del evaporador dañado",
+      "Expansión bloqueada"
+    ],
+    "pasos": [
+      "Medir presión de succión (debe estar sobre 60 PSI en R410A)",
+      "Limpiar filtro de aire",
+      "Verificar funcionamiento del ventilador interior",
+      "Revisar válvula de expansión"
+    ],
+    "herramientas": ["Manifold", "Termómetro", "Detector de fugas"]
+  },
+  "compresor caliente": {
+    "causas": [
+      "Condensador obstruido (no disipa calor)",
+      "Gas refrigerante sobrecargado",
+      "Ventilador del condensador dañado",
+      "Alta temperatura ambiente"
+    ],
+    "pasos": [
+      "Limpiar condensador con agua a presión",
+      "Verificar amperaje del compresor vs placa",
+      "Revisar velocidad del ventilador condensador",
+      "Medir temperatura de descarga (no debe superar 120°C)"
+    ],
+    "herramientas": ["Termómetro de contacto", "Pinzas amperimétricas"]
+  },
+  "poco caudal": {
+    "causas": [
+      "Filtro de aire muy sucio o mal instalado",
+      "Obstrucción en ductos o rejillas",
+      "Ventilador interior lento o dañado",
+      "Serpentín del evaporador sucio"
+    ],
+    "pasos": [
+      "Limpiar o reemplazar filtro de aire",
+      "Revisar rejillas y ductos",
+      "Medir RPM o voltaje del motor del ventilador",
+      "Lavar serpentín del evaporador si aplica"
+    ],
+    "herramientas": ["Multímetro", "Aspiradora", "Cepillo suave"]
+  },
+  "falla eléctrica": {
+    "causas": [
+      "Cableado suelto o quemado",
+      "Relé o contactor defectuoso",
+      "Tarjeta PCB dañada",
+      "Sobretensión o picos en la red"
+    ],
+    "pasos": [
+      "Verificar tensión estable en alimentación",
+      "Inspeccionar conexiones y bornes",
+      "Probar relé/contactor y bobina",
+      "Revisar códigos de error en display"
+    ],
+    "herramientas": ["Multímetro", "Destornilladores aislados", "Pinzas amperimétricas"]
+  }
+}

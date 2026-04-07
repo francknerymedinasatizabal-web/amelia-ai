@@ -1,0 +1,24 @@
+# Raíz monorepo
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.swp
+
+# Entornos y secretos
+.env
+.env.local
+.env.*.local
+
+# Backend
+amelia-backend/.venv/
+amelia-backend/venv/
+amelia-backend/__pycache__/
+amelia-backend/*.pyc
+amelia-backend/amelia.db
+
+# Frontend
+amelia-frontend/node_modules/
+amelia-frontend/.next/
+amelia-frontend/out/

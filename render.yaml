@@ -1,0 +1,22 @@
+# Blueprint Render: Web Service Python (ajusta CORS_ORIGINS a tu dominio Vercel)
+services:
+  - type: web
+    name: amelia-api
+    runtime: python
+    rootDir: amelia-backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.6"
+      - key: COMPANY_NAME
+        value: Central de Aires del Pacífico
+      - key: ASSISTANT_NAME
+        value: Amelia
+      - key: CORS_ORIGINS
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: OPENAI_API_KEY
+        sync: false

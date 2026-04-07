@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+python-multipart
+pillow
+qrcode[pil]
+pyjwt
+passlib[bcrypt]
+sqlalchemy>=2.0
+psycopg2-binary

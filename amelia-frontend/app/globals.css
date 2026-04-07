@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #0f2744;
+  --brand-navy: #0f2744;
+  --brand-teal: #0d9488;
+  --brand-glow: rgba(13, 148, 136, 0.22);
+  --brand-glow-soft: rgba(15, 39, 68, 0.12);
+}
+
+body {
+  color: var(--foreground);
+  min-height: 100vh;
+  background-color: #f0fdfa;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, var(--brand-glow), transparent),
+    radial-gradient(ellipse 60% 50% at 100% 50%, var(--brand-glow-soft), transparent),
+    radial-gradient(ellipse 50% 40% at 0% 80%, rgba(34, 211, 238, 0.08), transparent);
+  background-attachment: fixed;
+}
+
+.dark body {
+  color: #e2e8f0;
+  background-color: #020617;
+  background-image:
+    radial-gradient(ellipse 100% 80% at 50% -30%, rgba(13, 148, 136, 0.28), transparent),
+    radial-gradient(ellipse 50% 40% at 100% 20%, rgba(15, 39, 68, 0.45), transparent),
+    radial-gradient(ellipse 45% 35% at 0% 90%, rgba(20, 184, 166, 0.12), transparent);
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply rounded-2xl border border-white/25 bg-white/40 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/50;
+  }
+
+  .glass-nav {
+    @apply border-b border-white/15 shadow-xl backdrop-blur-xl dark:border-white/10;
+    background-color: rgb(7 26 46 / 0.92);
+  }
+  .dark .glass-nav {
+    background-color: rgb(7 26 46 / 0.95);
+  }
+
+  /** Contenido tipo markdown en chat (sin plugin typography) */
+  .prose-brand {
+    @apply max-w-none text-sm leading-relaxed text-slate-800 dark:text-slate-200;
+  }
+}
