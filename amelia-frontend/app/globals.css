@@ -4,6 +4,10 @@
 
 :root {
   --foreground: #0f2744;
+  /** Paleta dashboard Central de Aires (HTML de referencia) */
+  --navy: #0f2744;
+  --teal: #0d9488;
+  --bg: #f0f9ff;
   --brand-navy: #0f2744;
   --brand-teal: #0d9488;
   --brand-glow: rgba(13, 148, 136, 0.22);
@@ -46,5 +50,36 @@ body {
   /** Contenido tipo markdown en chat (sin plugin typography) */
   .prose-brand {
     @apply max-w-none text-sm leading-relaxed text-slate-800 dark:text-slate-200;
+  }
+
+  /** Skeleton premium (dashboard) */
+  .dashboard-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .dashboard-shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.45),
+      transparent
+    );
+    animation: dashboard-shimmer 1.6s ease-in-out infinite;
+  }
+  .dark .dashboard-shimmer::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  }
+}
+
+@keyframes dashboard-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }

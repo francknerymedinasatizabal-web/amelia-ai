@@ -11,6 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        /** Mapea --navy, --teal, --bg (no pisar la escala `teal` de Tailwind) */
+        cap: {
+          navy: "var(--navy)",
+          teal: "var(--teal)",
+          bg: "var(--bg)",
+        },
         brand: {
           navy: "#0f2744",
           "navy-deep": "#071a2e",
